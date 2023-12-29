@@ -1,0 +1,38 @@
+2023-12-25T19:58:01.7362662 view current balance selected
+2023-12-25T20:14:45.4316229 http headers set
+2023-12-25T20:14:45.4326205 tserv - accessing url base /send
+2023-12-25T20:14:45.4326205 tserv - attempting post for object createTransfer
+2023-12-25T20:14:45.4854322 tserv - create - Error rest client: 500 : [{"timestamp":"2023-12-26T01:14:45.482+00:00","status":500,"error":"Internal Server Error","message":"You can't send money to yourself","path":"/transfer/send"}]
+2023-12-25T20:14:45.4854322 tserv - create - Response body: {"timestamp":"2023-12-26T01:14:45.482+00:00","status":500,"error":"Internal Server Error","message":"You can't send money to yourself","path":"/transfer/send"}
+2023-12-25T20:14:45.4864324 sendbucks appflowError sending transfer
+2023-12-25T20:15:13.3226461 http headers set
+2023-12-25T20:15:13.3226461 tserv - accessing url base /send
+2023-12-25T20:15:13.3226461 tserv - attempting post for object createTransfer
+2023-12-25T20:15:13.4191229 tserv - create - Error rest client: 500 : [{"timestamp":"2023-12-26T01:15:13.415+00:00","status":500,"error":"Internal Server Error","message":"PreparedStatementCallback; SQL [INSERT INTO transfer(transfer_type_id, transfer_status_id, account_... (706 bytes)]
+2023-12-25T20:15:13.4191229 tserv - create - Response body: {"timestamp":"2023-12-26T01:15:13.415+00:00","status":500,"error":"Internal Server Error","message":"PreparedStatementCallback; SQL [INSERT INTO transfer(transfer_type_id, transfer_status_id, account_from, account_to, amount)VALUES(?, ?, ?, ?, ?) RETURNING transfer_id]; ERROR: insert or update on table \"transfer\" violates foreign key constraint \"fk_transfer_account_to\"\n  Detail: Key (account_to)=(2022) is not present in table \"account\".; nested exception is org.postgresql.util.PSQLException: ERROR: insert or update on table \"transfer\" violates foreign key constraint \"fk_transfer_account_to\"\n  Detail: Key (account_to)=(2022) is not present in table \"account\".","path":"/transfer/send"}
+2023-12-25T20:15:13.4191229 sendbucks appflowError sending transfer
+2023-12-25T20:15:33.9715632 http headers set
+2023-12-25T20:15:33.9725625 tserv - accessing url base /send
+2023-12-25T20:15:33.9725625 tserv - attempting post for object createTransfer
+2023-12-25T20:15:34.0070918 sendBucks selected
+2023-12-25T20:15:40.2031182 view current balance selected
+2023-12-25T20:15:52.0939035 http header getAllTransfers
+2023-12-25T20:16:07.8625946 http set for getTransferByTransferId
+2023-12-25T20:16:07.8721062 Exchange getTransferByTransferId
+2023-12-25T20:16:07.8751058 viewTransferHistory selected
+2023-12-25T20:24:01.7849152 401 : [no body]
+2023-12-25T20:24:19.3855194 view current balance selected
+2023-12-25T20:25:25.6461764 http headers set
+2023-12-25T20:25:25.647177 tserv - accessing url base /send
+2023-12-25T20:25:25.647177 tserv - attempting post for object createTransfer
+2023-12-25T20:25:25.7348026 tserv - create - Error rest client: 500 : [{"timestamp":"2023-12-26T01:25:25.732+00:00","status":500,"error":"Internal Server Error","message":"PreparedStatementCallback; SQL [INSERT INTO transfer(transfer_type_id, transfer_status_id, account_... (702 bytes)]
+2023-12-25T20:25:25.7348026 tserv - create - Response body: {"timestamp":"2023-12-26T01:25:25.732+00:00","status":500,"error":"Internal Server Error","message":"PreparedStatementCallback; SQL [INSERT INTO transfer(transfer_type_id, transfer_status_id, account_from, account_to, amount)VALUES(?, ?, ?, ?, ?) RETURNING transfer_id]; ERROR: insert or update on table \"transfer\" violates foreign key constraint \"fk_transfer_account_to\"\n  Detail: Key (account_to)=(10) is not present in table \"account\".; nested exception is org.postgresql.util.PSQLException: ERROR: insert or update on table \"transfer\" violates foreign key constraint \"fk_transfer_account_to\"\n  Detail: Key (account_to)=(10) is not present in table \"account\".","path":"/transfer/send"}
+2023-12-25T20:25:25.7348026 sendbucks appflowError sending transfer
+2023-12-25T20:25:59.0659105 http headers set
+2023-12-25T20:25:59.0659105 tserv - accessing url base /send
+2023-12-25T20:25:59.0659105 tserv - attempting post for object createTransfer
+2023-12-25T20:25:59.0999496 sendBucks selected
+2023-12-25T20:26:09.4616137 http header getAllTransfers
+2023-12-25T20:26:42.1427433 http set for getTransferByTransferId
+2023-12-25T20:26:42.1522525 Exchange getTransferByTransferId
+2023-12-25T20:26:42.1552513 viewTransferHistory selected
